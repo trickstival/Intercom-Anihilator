@@ -1,0 +1,27 @@
+{
+    "name": "Intercom Anihilator",
+    "version": "0.1",
+    "description": "Let intercom die",
+    "manifest_version": 2,
+    "author": [
+        {
+            "name": "Patrick Stival",
+            "email": "trick_stival@hotmail.com"
+        }
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.comex.io/*",
+                "https://*.logcomex.io/*",
+                "http://127.0.0.1/*"
+            ],
+            "css": [
+                "index.css"
+            ],
+            "js": [
+                "index.js"
+            ]
+        }
+    ]
+}
